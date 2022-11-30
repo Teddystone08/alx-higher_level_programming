@@ -1,2 +1,3 @@
-#!/bin/bash
-print("Programming is like building a multilingual puzzle")
+#!/bin/python3
+number = 98
+print(f"{number} Battery street")   
