@@ -6,4 +6,4 @@ if number > 0:
     if number == 0:
         print("is zero")
     else:
-        print("is vegative")
+        print("is negative")
