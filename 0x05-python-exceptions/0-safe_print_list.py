@@ -6,11 +6,12 @@ def safe_print_list(my_list=[], x=0):
         my_list is the source of list
     """
     list = 0
-    for i in range(x):
+    i = 0
+    while (i < x):
         try:
-            print("{}".format(my_list[i]), end="")
+            print(my_list[i], end="")
             list += 1
-        except indexerror:
-            continue
-    print("")
+        except:
+            i += 1
+    print()
     return list
