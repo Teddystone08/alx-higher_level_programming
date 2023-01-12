@@ -5,12 +5,13 @@ def safe_print_list(my_list=[], x=0):
         x represent the number of element of the list
         my_list is the source of list
     """
-    ret = 0
+    list = 0
     for i in range(x):
         try:
             print("{}".format(my_list[i]), end="")
-            ret += 1
+            list = list + 1
         except index error:
-            break
+            continue
+            
     print("")
-    return (ret)
+    return list
