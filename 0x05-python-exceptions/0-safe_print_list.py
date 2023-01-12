@@ -8,9 +8,9 @@ def safe_print_list(my_list=[], x=0):
     list = 0
     for i in range(x):
         try:
-            print("{}".format(my_list[i]), end=" ")
+            print("{}".format(my_list[i]), end="")
             list += 1
         except indexerror:
             break
     print("")
-    return (list)
+    return list
