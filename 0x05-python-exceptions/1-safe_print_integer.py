@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 
 def safe_print_integer(value):
     """ pirnt integers with {:d}.format().
@@ -13,5 +13,5 @@ def safe_print_integer(value):
     try:
         print("{:d}".format(value))
         return True
-    except TyperError, valueerror:
+    except TyperError:
         return False
