@@ -8,9 +8,8 @@ Module with class Mylist
 
 class Mylist(list):
     """Class with print_sorted method"""
-    pass
 
     def print_sorted(self):
-        """Sorted list method"""
-
-        print(sorted(list(self)))
+        """Method that sorted list"""
+        self.sort()
+        print(self)
