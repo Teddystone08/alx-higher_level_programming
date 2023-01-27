@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 """
-==================
-Module empty class
-==================
+===================================
+module with class BaseGeometry
+===================================
 """
+
+
 class BaseGeometry:
-    """Class BaseGeometry"""
+    """empty class"""
+
