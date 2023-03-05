@@ -4,76 +4,70 @@ Module class square
 """
 
 
-class Square(object):
-    """Class square with one attribute.
-    Args:
-        __size (int): size of a square.
-        __position (tuple): tuple of two positive int coordinates
-    Raises:
-        TypeError: if not an int
-        ValueError: if negative int
-        TypeError: if not tup of 2 positive ints
-    """
+class Square:
+    """Defines a square"""
     def __init__(self, size=0, position=(0, 0)):
-        """Initialize class with attributes."""
-        self.__size = size
-        if not isinstance(position, tuple) or len(position) != 2:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        elif not all(isinstance(x, int) for x in position):
-            raise TypeError("position must be a tuple of 2 positive integers")
-        elif all(x < 0 for x in position):
-            raise TypeError("position must be a tuple of 2 positive integers")
-        self.__position = position
+        """Initialises the data"""
+        self.size = size
+        self.position = position
+
+    def area(self):
+        """Returns current square area"""
+        return self.__size**2
 
     @property
     def size(self):
-        """Gets the value of __size
-        Sets the value of __size
-        """
+        """Getter method"""
         return self.__size
 
     @size.setter
     def size(self, value):
-        if not isinstance(value, int):
+        """Setter method"""
+        self.__size = value
+        if type(value) != int:
             raise TypeError("size must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("size must be >= 0")
+
+    def my_print(self):
+        """Prints the square"""
+        if self.__size == 0:
+            print()
         else:
-            self.__size = value
+            for y in range(self.__position[1]):
+                print()
+            for i in range(self.__size):
+                for x in range(self.__position[0]):
+                    print(' ', end='')
+                for j in range(self.__size):
+                    print('#', end='')
+                print()
 
     @property
     def position(self):
-        """get and set falue of property"""
+        """Getter method"""
         return self.__position
 
     @position.setter
     def position(self, value):
-        if not isinstance(value, tuple) or len(value) != 2:
+        """Setter method"""
+        if type(value) != tuple or len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
-        elif not all(isinstance(x, int) for x in value):
+        if any(type(i) != int for i in value) or any(j < 0 for j in value):
             raise TypeError("position must be a tuple of 2 positive integers")
-        elif all(x < 0 for x in value):
-            raise TypeError("position must be a tuple of 2 positive integers")
-        else:
-            self.__position = value
+        self.__position = value
 
-    def area(self):
-        """squares the size of the square.
-        Returns:
-            the current square area.
-        """
-        return self.__size ** 2
-
-    def my_print(self):
-        """prints square with '#' char to stdout"""
-        if self.__size == 0:
-            print()
-        else:
-            for i in range(0, self.__position[1]):
-                print()
-            for i in range(0, self.__size):
-                for k in range(0, self.__position[0]):
-                    print(" ", end='')
-                for j in range(0, self.__size):
-                    print("#", end="")
-                print()
+    def __str__(self):
+        """Same print behaviour as my_print"""
+        s = ""
+        if not self.__size:
+            return s
+        for y in range(self.__position[1]):
+            s += '\n'
+        for i in range(self.__size):
+            for x in range(self.__position[0]):
+                s += ' '
+            for j in range(self.__size):
+                s += '#'
+            s += '\n'
+        return s[: - 1]
