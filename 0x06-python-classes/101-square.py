@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Module class square
+"""
+
+
 class Square(object):
     """Class square with one attribute.
     Args:
