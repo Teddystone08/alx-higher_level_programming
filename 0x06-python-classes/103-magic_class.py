@@ -1,10 +1,10 @@
 #!/usr/bin/python3
+import math
+
+
 """
 Module magic class
 """
-
-
-import math
 
 
 class MagicClass:
