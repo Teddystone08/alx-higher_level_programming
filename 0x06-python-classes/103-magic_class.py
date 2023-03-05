@@ -1,10 +1,6 @@
 #!/usr/bin/python3
 import math
 
-"""
-Module math class
-"""
-
 
 class MagicClass:
     def __init__(self, radius=0):
