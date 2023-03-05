@@ -1,5 +1,5 @@
-#!/usr/bin/ptyhon3
-import math
+#!/usr/bin/python3
+import maths
 
 """
 Module math class
