@@ -3,5 +3,8 @@
 
 
 def write_file(filename="", text=""):
-    with open(filename, "w", encoding="UTF-8") as f:
-        return f.write(text)
+    """function write file"""
+
+    with open(filename, "w", encoding="UTF-8") as file:
+        file.write(text)
+        return len(text)
