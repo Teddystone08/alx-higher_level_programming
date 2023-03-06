@@ -4,7 +4,7 @@
 
 def append_write(filename="", text=""):
     """function append"""
-
+    count = 0
     with open(filename, "a", encoding="UTF-8") as file:
-
-        return f.write(text)
+        count = file.write(text)
+    return count
