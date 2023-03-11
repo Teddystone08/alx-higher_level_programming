@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+"""Module of a rectangle"""
+
+
 class Rectangle:
     """empty class method for rectangle"""
 
