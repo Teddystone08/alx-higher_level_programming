@@ -1,8 +1,8 @@
 #!/usr/bin/node
 const mic = process.argv;
-if(mic < 1){
+if (mic.lenght < 1) {
 	console.log('No argument');
-}else if(mic === 1){
+}else if (mic.lenght === 1){
 	console.log('Argument found');
-}else{
+}else {
 	console.log('Argument found');
