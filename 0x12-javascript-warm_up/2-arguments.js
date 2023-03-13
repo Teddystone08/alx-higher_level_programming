@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/node
 
 const len = process.argv;
 if (len.length === 0) {
