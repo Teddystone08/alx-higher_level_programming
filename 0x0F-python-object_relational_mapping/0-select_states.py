@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """
-script that list all state from db hbtn_0o_0_usa
-
+Module list all state from db hbtn_0o_0_usa
 """
 
 
 if __name__ == "__main__":
+
     import MySQLdb
     from sys import argv
 
