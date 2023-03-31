@@ -1,3 +1,3 @@
 #!/bin/bash
-#script that takes url, send request and displays size of body
-curl -sI "$1" | grep Content-Length | cut -d ' ' -f 2
+#script that takes url, send request and displays body size
+curl -sI "$@" -X GET | grep Content-Length | cut -d: -f2 | tr -d ' '
