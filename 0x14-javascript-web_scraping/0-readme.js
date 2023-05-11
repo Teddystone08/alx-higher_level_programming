@@ -1,4 +1,4 @@
-!#/usr/bin/node
+#!/usr/bin/node
 
 const filePath = process.argv[2];
 const fs = require('fs');
