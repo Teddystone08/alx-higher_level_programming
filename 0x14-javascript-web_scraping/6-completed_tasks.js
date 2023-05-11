@@ -1,11 +1,10 @@
 #!/usr/bin/node
-
 const request = require('request');
 const url = process.argv[2];
 
-request(url, function (err, response, body) {
-  if (err) {
-    console.log(err);
+request(url, function (error, response, body) {
+  if (error) {
+    console.log(error);
   } else if (response.statusCode === 200) {
     const completed = {};
     const tasks = JSON.parse(body);
