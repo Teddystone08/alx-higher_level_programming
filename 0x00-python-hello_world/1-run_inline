@@ -1,2 +1,3 @@
 #!/bin/bash
+# save in the env var
 python3 -c "$PYCODE"
