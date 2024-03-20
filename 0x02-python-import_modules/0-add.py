@@ -1,6 +1,6 @@
 #!/usr/bin/python3
+from add_0 import add
 if __name__ == "__main__":
-    import add from add_0
     a = 1
     b = 2
     output = add(a, b)
