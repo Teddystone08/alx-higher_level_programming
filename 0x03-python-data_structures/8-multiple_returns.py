@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-def multiple_returns(sentence):
+def simple_delete(a_dictionary, key="sentence")::
     if not sentence:
         sentence = None
     if sentence:
