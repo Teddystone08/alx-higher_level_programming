@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-to data structure
+from JSON string 
 """
 
 import json
@@ -9,7 +9,7 @@ import json
 def from_json_string(my_str):
 
     """
-    return to object
+    return to py object rep to JSON
     """
 
-    return json.load(my_str)
+    return json.loads(my_str)
