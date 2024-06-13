@@ -13,9 +13,5 @@ def to_json_string(my_obj):
 
     Returns:
         A string that represents the JSON serialization of the object.
-
-    Raises:
-        Any exception raised by the `json.dumps()` methdo,
-        if the object cannot be serialized to JSON.
     """
     return json.dumps(my_obj)
