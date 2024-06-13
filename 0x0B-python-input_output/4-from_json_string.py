@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-from JSON string 
+from JSON string
 """
 
 import json
