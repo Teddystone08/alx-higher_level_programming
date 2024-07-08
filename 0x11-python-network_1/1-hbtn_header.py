@@ -11,5 +11,5 @@ if __name__ == '__main__':
     url = sys.argv[1]
 
     with urllib.request.urlopen(url) as response:
-        head = response.input()
-        print(head['X-Request-Id'])
+        url_head = response.info()
+        print(url_head['X-Request-Id'])
