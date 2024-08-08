@@ -1,6 +1,4 @@
-const h = $('header');
-const toggle = $('div#toggle_header');
-
-toggle.on('click', () => {
-	header.toggleClass('red green');
+//JavaScript script that toggles the class of the <header> when clicks DIV#toggle_header
+$('#toggle_header').click(function() {
+    $('header').toggleClass('red green');
 });
