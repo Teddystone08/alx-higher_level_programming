@@ -1,3 +1,4 @@
+//JavaScript script that fetches the character from url
 const  name = $('#character');
 
 $.ajax({
