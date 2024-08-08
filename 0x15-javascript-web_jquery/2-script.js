@@ -1,6 +1,2 @@
-const h = $('header');
-const red = $('div#red_header');
-
-red.on('click', () => {
-	h.css('color', '#FF0000');
-});
+//javaScript that update <header> element when user click Div#red_header
+$('#red_header').click(() => $('header').css('color', '#FF0000'));
