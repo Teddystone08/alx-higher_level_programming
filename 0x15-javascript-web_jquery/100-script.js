@@ -1,14 +1,4 @@
-function updateHeaderColor () {
-	const h = document.querySelector('header');
-	h.style.color = '#FF0000';
-}
-
-if (document.readyState === 'complete') {
-	updateHeaderColor();
-} else {
-	if (window.addEventListener) {
-		window.addEventListener('load', updateHeaderColor, false);
-	} else {
-		window.attachEvent('onload', updateHeaderColor);
-	}
-}
+//Write a JavaScript script that updates the text colour of the <header> element to red (#FF0000)
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('header').style.color = '#FF0000';
+});
