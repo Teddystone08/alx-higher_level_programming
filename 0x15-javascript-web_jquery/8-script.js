@@ -1,3 +1,4 @@
+//javaScript that fetches list titles
 const title = $('ul#list_movies');
 
 $.ajax({
