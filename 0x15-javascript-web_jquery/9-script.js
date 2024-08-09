@@ -1,10 +1,6 @@
-$(function () {
-	const h = $('#hello');
-	$.ajax({
-		type: 'GET',
-		url: 'https://fourtonfish.com/hellosalut/?lang=fr',
-		success: (data) => {
-			h.text(data.hello);	
-		}
-	});
+//JavaScript script that fetches from url from tag DIV#hello.
+$(document).ready(function() {
+    $.get('https://hellosalut.stefanbohacek.dev/?lang=fr', function(data) {
+        $('#hello').text(data.hello);
+    });
 });
